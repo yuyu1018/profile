@@ -1,5 +1,5 @@
 var swiper = new Swiper('.swiper', {
-    slidesPerView: 3, // Show 3 slides
+    slidesPerView: 1, // Default to showing 3 slides
     spaceBetween: 30,
     centeredSlides: true,
     loop: true,
@@ -7,4 +7,10 @@ var swiper = new Swiper('.swiper', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+    breakpoints: {
+        // When window width is < 768px
+        769: {
+            slidesPerView: 3, // Show 1 slide
+        }
+    }
 });

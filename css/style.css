@@ -3,12 +3,7 @@ body{
     font-optical-sizing: auto;
 }
 
-
 /* FV */
-
-header{
-}
-
 header::before {
     content: "";
     position: absolute;
@@ -36,7 +31,7 @@ header::before {
     white-space: nowrap;
     h1{
         margin: 0;
-        font-size: 72px;
+        font-size: 72px;        
         font-weight: 900;
         color: #136B90;
     }
@@ -372,4 +367,169 @@ header::before {
 
 .footer-follow p{
     margin-bottom: 5px;
+}
+
+@media screen and (768px <= width < 1200px){
+
+    /* .fv-wrap{
+        height: 58.3vw;
+    } */
+    
+    .header-text h1 {
+        font-size: clamp(2.813rem, -0.188rem + 6.25vw, 4.5rem);
+    }
+    
+    .header-text p {
+        font-size: clamp(1.125rem, 0.681rem + 0.93vw, 1.375rem);
+    }
+
+    .fv-img img{
+        width: clamp(25rem, -13.889rem + 81.02vw, 46.875rem);
+    }
+
+    .header-text img{
+        width: clamp(2.188rem, 0.521rem + 3.47vw, 3.125rem);
+    }
+    .swiper-slide img{
+        width: clamp(7.5rem, 3.056rem + 9.26vw, 10rem);
+    }
+} 
+
+@media screen and (max-width:768px) {
+    .fv-wrap{
+        flex-direction: column-reverse;
+    }
+
+    .header-text{
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .header-text h1 {
+        font-size: clamp(1.5rem, 0.429rem + 5.36vw, 5rem);
+    }
+    
+    .header-text p {
+        font-size: clamp(1rem, 0.911rem + 0.45vw, 1.125rem);
+        margin-top: 10px;
+    }
+
+    .fv-img{
+        text-align: center;
+    }
+
+    .fv-img img{
+        width: clamp(18.75rem, 9.821rem + 44.64vw, 31.25rem);
+    }
+
+    /* About */
+    .about-contents{
+        padding: 0 20px;
+        margin-top: 30px;
+        flex-direction: column;
+        padding-bottom: 50px;
+        gap: 30px;
+    }
+
+    .about-text{
+        padding-bottom: 0;
+    }
+
+    .about-profile img{
+        width: 70%;
+    }
+
+    .about-text h1{
+        top: -35px;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: clamp(2.5rem, 1.875rem + 3.13vw, 3.375rem);
+    }
+
+    .about-text p{
+        font-size: 14px;
+        padding: 40px 0 0;
+    }
+
+    .about-profile{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 10px;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .about-profile h2{
+        font-size: clamp(1.375rem, 1.107rem + 1.34vw, 1.75rem);
+        margin-top: 0;
+    }
+
+    .about-profile img{
+        width: clamp(6.25rem, 1.786rem + 22.32vw, 12.5rem);
+    }
+
+    .about-profile ul{
+        margin: 0;
+    }
+
+    /* slill */
+    .skill-contents{
+        margin-top: 50px;
+    }
+
+    .skill-contents h1{
+        font-size: clamp(2.5rem, 1.875rem + 3.13vw, 3rem);
+    }
+
+    .skill-contents h2{
+        font-size: clamp(1rem, 0.643rem + 1.79vw, 1.5rem);
+    }
+
+    .swiper{
+        width: clamp(18.75rem, 12.054rem + 33.48vw, 28.125rem);
+    }
+
+    .swiper-slide img{
+        width: clamp(5.625rem, 4.286rem + 6.7vw, 7.5rem);
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        height: 30px !important;
+        width: 30px !important; 
+    }
+    /* 矢印を消して画像に変更する */
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        content: "" !important;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 50px;
+        width: 50px;
+        margin: auto;
+    }
+    /* 前に戻る矢印の画像パス */
+    .swiper-button-prev::after {
+        background-image: url(https://shimizu-create.com/wp-content/uploads/2024/03/arrow-left.png);
+    }
+    /* 次に進む矢印の画像パス */
+    .swiper-button-next::after {
+        background-image: url(https://shimizu-create.com/wp-content/uploads/2024/03/arrow-right.png);
+    }
+
+    .works-contents h1{
+        font-size: clamp(2.5rem, 1.875rem + 3.13vw, 3rem);
+    }
+
+    .list-container{
+        margin-top: 80px;
+        flex-direction: column;
+    }
+
+    .list-item{
+        margin: auto;
+        max-width: calc(90% - 20px);
+    }
+
 }
