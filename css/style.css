@@ -130,7 +130,7 @@ li:hover::after {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(./img/fv-bkimg02.png);
+    background-image: url(../img/fv-bkimg02.png);
     background-size: cover; /* 必要に応じて他のbackgroundプロパティも設定可能 */
     opacity: 0.4; /* ここで背景画像の不透明度を設定 */
     z-index: -1; /* 必要に応じて調整 */
