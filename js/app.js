@@ -21,9 +21,12 @@ function closeMenu() {
     var navLinks = document.getElementById('nav-links');
     var menuIcon = document.getElementById('menu-icon');
     var closeIcon = document.getElementById('close-icon');
-    navLinks.classList.remove('show');
-    menuIcon.style.display = 'block';
-    closeIcon.style.display = 'none';
+
+    if (window.innerWidth <= 768) {
+        navLinks.classList.remove('show');
+        menuIcon.style.display = 'block';
+        closeIcon.style.display = 'none';
+    }
 }
 
 document.getElementById('menu-icon').addEventListener('click', function() {
