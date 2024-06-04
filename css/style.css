@@ -520,6 +520,8 @@ li:hover::after {
 
 @media screen and (max-width:768px) {
     .fv-wrap{
+        padding: 40px 0;
+        height: 100%;
         flex-direction: column-reverse;
     }
 
