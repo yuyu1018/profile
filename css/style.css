@@ -636,11 +636,13 @@ li:hover::after {
     }
     /* 前に戻る矢印の画像パス */
     .swiper-button-prev::after {
-        background-image: url(https://shimizu-create.com/wp-content/uploads/2024/03/arrow-left.png);
+        background-image: 
+        url(https://shimizu-create.com/wp-content/uploads/2024/03/arrow-left.png);
     }
     /* 次に進む矢印の画像パス */
     .swiper-button-next::after {
-        background-image: url(https://shimizu-create.com/wp-content/uploads/2024/03/arrow-right.png);
+        background-image: 
+        url(https://shimizu-create.com/wp-content/uploads/2024/03/arrow-right.png);
     }
 
     .works-contents h1{
